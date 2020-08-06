@@ -60,6 +60,14 @@ ul {
   color: white;
 }
 
+#header-hr {
+  position: fixed;
+  width: 100%;
+  padding-top: 55px;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 @media screen and (max-width: 1024px) {
   div.header-links a {
     display: none;
@@ -74,6 +82,13 @@ ul {
   }
   .brand {
     margin-left: 20px;
+  }
+  #header-hr {
+    position: fixed;
+    width: 100%;
+    padding-top: 50px;
+    border: 0;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
   }
 }
 

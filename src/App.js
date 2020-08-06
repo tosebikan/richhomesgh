@@ -29,6 +29,8 @@ function App() {
             </button>
           </div>
         </header>
+        <hr id="header-hr" />
+
         <aside className="sidebar">
           <ul>
             <li>
