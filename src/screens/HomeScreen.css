@@ -14,7 +14,7 @@
 }
 
 .hero-text {
-  padding-top: 120%;
+  padding-top: 60vh;
   padding-left: 16px;
   color: white;
   text-align: left;
@@ -34,6 +34,32 @@
 
 .hero p {
   font-size: 16px;
+}
+
+.hero-icon-container {
+  margin: 0 auo 0;
+}
+
+.hero-icon {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  animation: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @media (min-width: 1023px) {
