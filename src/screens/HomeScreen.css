@@ -6,6 +6,7 @@
       rgba(0, 0, 0, 0.5) */
     ),
     url("../images/hero-image.jpg");
+  height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,7 +15,6 @@
 
 .hero-text {
   padding-top: 120%;
-  padding-bottom: 60%;
   padding-left: 16px;
   color: white;
   text-align: left;
@@ -23,6 +23,39 @@
   font-size: 35px;
 }
 
+#c1::after {
+  content: "\a";
+  white-space: pre;
+}
+
+#c2 {
+  font-weight: normal;
+}
+
 .hero p {
   font-size: 16px;
+}
+
+@media (min-width: 1023px) {
+  .hero {
+    height: 90vh;
+  }
+  .hero-text {
+    padding-top: 25%;
+    padding-left: 10%;
+  }
+  .hero h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+
+  #c1::after {
+    content: "\a";
+    white-space: normal;
+  }
+
+  .hero p {
+    font-size: 35px;
+    margin-top: 0;
+  }
 }

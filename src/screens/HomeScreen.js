@@ -6,8 +6,8 @@ function HomeScreen() {
     <div className="hero">
       <div className="hero-text">
         <h1>
-          <strong>Luxury</strong>
-          <br /> At Its Best
+          <span id="c1">Luxury</span>
+          <span id="c2">At Its Best</span>
         </h1>
         <p>Premium Real Estate At Your Finger Tips</p>
       </div>
