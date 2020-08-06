@@ -1,5 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faBuilding,
+  faAddressCard,
+  faQuestionCircle,
+  faAddressBook
+} from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import HomeScreen from "./screens/HomeScreen";
 
@@ -34,18 +42,26 @@ function App() {
         <aside className="sidebar">
           <ul>
             <li>
+              <FontAwesomeIcon icon={faHome} className="sidebar-icon" />
               <Link>Home</Link>
             </li>
             <li>
+              <FontAwesomeIcon icon={faBuilding} className="sidebar-icon" />
               <Link>Properties</Link>
             </li>
             <li>
+              <FontAwesomeIcon icon={faAddressCard} className="sidebar-icon" />
               <Link>About Us</Link>
             </li>
             <li>
+              <FontAwesomeIcon
+                icon={faQuestionCircle}
+                className="sidebar-icon"
+              />
               <Link>FAQ</Link>
             </li>
             <li>
+              <FontAwesomeIcon icon={faAddressBook} className="sidebar-icon" />
               <Link>Contact</Link>
             </li>
           </ul>
