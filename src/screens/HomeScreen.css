@@ -1,0 +1,28 @@
+.hero {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 0, 150, 0.2),
+      rgba(255, 0, 150, 0.2) /* rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5) */
+    ),
+    url("../images/hero-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-text {
+  padding-top: 120%;
+  padding-bottom: 60%;
+  padding-left: 16px;
+  color: white;
+  text-align: left;
+}
+.hero h1 {
+  font-size: 35px;
+}
+
+.hero p {
+  font-size: 16px;
+}
