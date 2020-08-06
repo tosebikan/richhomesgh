@@ -4,6 +4,7 @@
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 ul {
@@ -32,19 +33,6 @@ ul {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .header {
   position: fixed;
   width: 90%;
@@ -55,10 +43,6 @@ ul {
   padding: 1rem;
 }
 
-.brand a {
-  color: black;
-}
-
 .header-links {
   display: flex;
   align-items: center;
@@ -66,7 +50,6 @@ ul {
 
 .header-links a {
   padding: 0.5rem;
-  color: black;
 }
 
 .header-button {
@@ -74,6 +57,7 @@ ul {
   background: none;
   font-size: 1.5rem;
   cursor: pointer;
+  color: white;
 }
 
 @media screen and (max-width: 1024px) {
@@ -84,6 +68,12 @@ ul {
 @media screen and (min-width: 1000px) {
   div.header-links button {
     display: none;
+  }
+  .header {
+    width: 95%;
+  }
+  .brand {
+    margin-left: 20px;
   }
 }
 

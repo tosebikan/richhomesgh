@@ -49,9 +49,11 @@ function App() {
           </ul>
         </aside>
 
-        <div>
-          <Route path="/" component={HomeScreen} exact={true} />
-        </div>
+        <main>
+          <div>
+            <Route path="/" component={HomeScreen} exact={true} />
+          </div>
+        </main>
       </div>
     </Router>
   );
