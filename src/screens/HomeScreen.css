@@ -88,14 +88,35 @@
 
 /* featured */
 #featured {
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .featured-title {
   text-align: left;
+  padding-left: 20px;
 }
 
 .featured-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (min-width: 1023px) {
+  .featured-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.feature-button {
+  margin: 50px auto;
+  box-shadow: 0 10px 20px rgba(245, 166, 35, 0.5);
+  background-color: #f5a623;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
 }
