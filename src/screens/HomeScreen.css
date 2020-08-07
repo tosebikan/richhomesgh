@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .hero {
   background: linear-gradient(
       0deg,
@@ -44,10 +47,16 @@
   position: absolute;
   bottom: 10px;
   color: white;
+
   animation: bounce;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.hero-icon:hover {
+  color: #000;
 }
 
 @keyframes bounce {
@@ -64,7 +73,7 @@
 
 @media (min-width: 1023px) {
   .hero {
-    height: 90vh;
+    height: 100vh;
   }
   .hero-text {
     padding-top: 25%;
@@ -194,5 +203,53 @@
   }
   .info-b p {
     width: 70%;
+  }
+}
+
+/* about us */
+
+.about-us {
+  background-color: #f6f7f9;
+  margin: 50px auto;
+  padding: 50px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us-img {
+  width: 280px;
+  height: 240px;
+  border-radius: 20px;
+}
+
+.about-us-info {
+  width: 290px;
+}
+
+.about-us-info h3 {
+  font-weight: bold;
+}
+
+@media (min-width: 1000px) {
+  .about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 50px;
+  }
+
+  .about-us img {
+    width: 350px;
+    height: 300px;
+  }
+
+  .about-us-info {
+    width: 430px;
+    text-align: left;
+    margin-left: 60px;
+    padding: 0;
   }
 }

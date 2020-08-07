@@ -17,11 +17,13 @@ function HomeScreen() {
           <p>Premium Real Estate At Your Finger Tips</p>
         </div>
         <div className="hero-icon-container">
-          <FontAwesomeIcon
-            icon={faChevronDown}
-            size="3x"
-            className="hero-icon"
-          />
+          <a href="#featured">
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              size="3x"
+              className="hero-icon"
+            />
+          </a>
         </div>
       </div>
       <div id="featured">
@@ -53,6 +55,26 @@ function HomeScreen() {
             the selling or renting process.
           </p>
           <button className="info-button">Contact Us</button>
+        </div>
+      </div>
+
+      <div className="about-us">
+        <img
+          src={require("../images/pc.jpg")}
+          alt=""
+          className="about-us-img"
+        />
+
+        <div className="about-us-info">
+          <h4> About Us</h4>
+          <h3>We Provide Premium Properties With ease </h3>
+          <p>
+            At Rich Homes Properties & investments we take pride in providing
+            our clients with top of the line services.
+          </p>
+          <p>Bringing security to the process of home ownership of renting.</p>
+
+          <button className="feature-button">Learn More</button>
         </div>
       </div>
     </div>
