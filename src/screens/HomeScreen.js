@@ -29,7 +29,10 @@ function HomeScreen() {
         <div className="featured-gallery">
           <Card />
           <Card />
+          <Card />
+          <Card />
         </div>
+        <button className="feature-button">See More</button>
       </div>
     </div>
   );
