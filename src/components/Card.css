@@ -1,0 +1,124 @@
+.card-container {
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  width: 175px;
+  height: 200px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+
+.card-container img {
+  border-radius: 20px;
+  width: 170px;
+  height: 195px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  position: relative;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.card-container img:hover {
+  cursor: pointer;
+  transform: scale(1.028, 1.028);
+}
+
+.card-tag {
+  background-color: rgba(245, 166, 35, 1);
+  position: absolute;
+  width: 85px;
+  height: 30px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  top: 0;
+  right: 0px;
+}
+
+.card-tag p {
+  font-size: 9px;
+  color: white;
+  font-weight: 700;
+}
+
+.card-info {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  width: 145px;
+  height: 45px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.card-info-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.card-info-amount {
+  color: white;
+}
+
+.card-info-top p {
+  margin: 0;
+}
+
+.card-info-mid {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 9px;
+  font-weight: 700;
+  color: white;
+}
+
+.card-info-mid p {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.card-info-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  font-size: 9px;
+  color: white;
+}
+
+.card-info-bottom p {
+  margin: 0;
+  margin-left: 3px;
+  color: #282828;
+}
+
+.card-info-bottom-part {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .card-container {
+    width: 350px;
+    height: 350px;
+  }
+
+  .card-container img {
+    width: 340px;
+    height: 340px;
+  }
+}
