@@ -34,6 +34,27 @@ function HomeScreen() {
         </div>
         <button className="feature-button">See More</button>
       </div>
+      <div className="info">
+        <div className="info-a">
+          <h1>
+            Rich Homes <br />
+            Properties
+          </h1>
+          <p>18 junction, Spintex Accra</p>
+          <p>+233 054-123-1234</p>
+          <p>Mon - Sun: 8:00am - 6:00pm</p>
+        </div>
+        <div className="info-b">
+          <h1>
+            Want to Sell Or Rent <br /> a Property ?
+          </h1>
+          <p>
+            Let us create a tailored strategic marketing plan and keep track of
+            the selling or renting process.
+          </p>
+          <button className="info-button">Contact Us</button>
+        </div>
+      </div>
     </div>
   );
 }
