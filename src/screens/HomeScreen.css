@@ -85,3 +85,17 @@
     margin-top: 0;
   }
 }
+
+/* featured */
+#featured {
+  padding: 20px;
+}
+.featured-title {
+  text-align: left;
+}
+
+.featured-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
