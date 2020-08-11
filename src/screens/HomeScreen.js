@@ -1,4 +1,7 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./HomeScreen.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,6 +14,18 @@ import {
 import Card from "../components/Card";
 
 function HomeScreen() {
+  const settings = {
+    dots: true,
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 8000,
+    arrows: true,
+    className: "slides"
+  };
   return (
     <div>
       <div className="hero">
@@ -87,7 +102,6 @@ function HomeScreen() {
         <div className="services-title">
           <h2>Services</h2>
         </div>
-
         <div className="services-items-container">
           <div className="services-item">
             <FontAwesomeIcon icon={faSearch} className="services-icon" />
@@ -111,6 +125,41 @@ function HomeScreen() {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="slide-container">
+        <h4>What Our Clients Say</h4>
+        <Slider {...settings}>
+          <div className="testimonial-item">
+            <img src={require("../images/person1.png")} alt="testomonial" />
+            <h3>Desmond James</h3>
+            <p>
+              Rich Homes has the best real estate cutomer service i have ever
+              experienced in west Africa.
+            </p>
+          </div>
+          <div className="testimonial-item">
+            <img src={require("../images/person3.png")} alt="testomonial" />
+            <h3>Mary Queen</h3>
+            <p>
+              Rich Homes is definitely a service you can trust to get quality
+              housing in Ghana.
+            </p>
+          </div>
+        </Slider>
+      </div>
+
+      <div className="question">
+        <h2> Have a quick question ?</h2>
+        <p>send us your mail and we’ll get in touch with you </p>
+        <form className="question-form">
+          <input
+            type="text"
+            placeholder="Enter your email"
+            className="question-input"
+          />
+          <button className="question-button">Send</button>
+        </form>
       </div>
     </div>
   );
