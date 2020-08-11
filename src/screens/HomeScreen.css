@@ -193,7 +193,7 @@ html {
     font-size: 35px;
   }
   .info-a p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .info-b {
     width: 540px;
@@ -226,6 +226,9 @@ html {
 .about-us-info {
   width: 290px;
 }
+.about-us-info p {
+  font-size: 12px;
+}
 
 .about-us-info h3 {
   font-weight: bold;
@@ -251,5 +254,8 @@ html {
     text-align: left;
     margin-left: 60px;
     padding: 0;
+  }
+  .about-us-info p {
+    font-size: 14px;
   }
 }
