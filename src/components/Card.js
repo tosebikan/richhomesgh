@@ -12,7 +12,7 @@ import "./Card.css";
 function Card() {
   return (
     <div className="card-container">
-      <img src={require("../images/home1.jpg")} alt="" class="card-image" />
+      <img src={require("../images/home1.jpg")} alt="" className="card-image" />
 
       <div className="card-tag">
         <p>For Sale</p>
