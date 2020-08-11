@@ -210,7 +210,7 @@ html {
 
 .about-us {
   background-color: #f6f7f9;
-  margin: 50px auto;
+  margin: 50px auto 0;
   padding: 50px 30px 0px;
   display: flex;
   flex-direction: column;
@@ -257,5 +257,90 @@ html {
   }
   .about-us-info p {
     font-size: 14px;
+  }
+}
+
+/* services */
+.services {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.services-title {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.services-title p {
+  font-weight: bold;
+}
+
+.services-items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-item {
+  padding: 10px;
+  width: 80vw;
+  height: 130px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.services-item:hover {
+  border: 1px solid #d3d3d3;
+}
+
+.services-icon {
+  background-color: #f6f6fe;
+  color: #004dff;
+  padding: 15px;
+  border-radius: 100%;
+}
+
+.services-item h3 {
+  font-size: 16px;
+  color: #4a4a4a;
+}
+.services-item p {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 12px;
+  color: #4a4a4a;
+}
+
+@media (min-width: 1000px) {
+  .services {
+    padding: 20px;
+    margin: 50px 0;
+  }
+
+  .services-items-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .services-icon {
+    font-size: 18px;
+  }
+
+  .services-item {
+    width: 380px;
+    height: 180px;
+  }
+
+  .services-item h3 {
+    font-size: 21px;
+  }
+
+  .services-item p {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 16px;
   }
 }

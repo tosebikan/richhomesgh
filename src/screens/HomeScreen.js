@@ -1,7 +1,12 @@
 import React from "react";
 import "./HomeScreen.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronDown,
+  faSearch,
+  faHandshake,
+  faHome
+} from "@fortawesome/free-solid-svg-icons";
 
 import Card from "../components/Card";
 
@@ -75,6 +80,36 @@ function HomeScreen() {
           <p>Bringing security to the process of home ownership of renting.</p>
 
           <button className="feature-button">Learn More</button>
+        </div>
+      </div>
+
+      <div className="services">
+        <div className="services-title">
+          <h2>Services</h2>
+        </div>
+
+        <div className="services-items-container">
+          <div className="services-item">
+            <FontAwesomeIcon icon={faSearch} className="services-icon" />
+            <h3>Find A Property</h3>
+            <p>
+              Go through our listings, choose your desired property & contact us
+            </p>
+          </div>
+          <div className="services-item">
+            <FontAwesomeIcon icon={faHandshake} className="services-icon" />
+            <h3>Agreement</h3>
+            <p>
+              We facilitate the property purchase or rent process agreement.
+            </p>
+          </div>
+          <div className="services-item">
+            <FontAwesomeIcon icon={faHome} className="services-icon" />
+            <h3>Enjoy Your New Home</h3>
+            <p>
+              Move into your new home knowing rich homes has got you covered.
+            </p>
+          </div>
         </div>
       </div>
     </div>
