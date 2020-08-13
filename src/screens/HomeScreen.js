@@ -10,6 +10,7 @@ import {
   faHandshake,
   faHome
 } from "@fortawesome/free-solid-svg-icons";
+import data from "../data";
 
 import Card from "../components/Card";
 
@@ -26,6 +27,10 @@ function HomeScreen() {
     arrows: true,
     className: "slides"
   };
+
+  const featured = data.properties.filter(
+    (property) => property.featured === true
+  );
   return (
     <div>
       <div className="hero">
@@ -49,10 +54,18 @@ function HomeScreen() {
       <div id="featured">
         <h2 className="featured-title">Featured Properties</h2>
         <div className="featured-gallery">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {featured.map((feature) => (
+            <Card
+              tag={feature.tag}
+              image={feature.image}
+              title={feature.title}
+              price={feature.price}
+              address={feature.address}
+              beds={feature.bedrooms}
+              baths={feature.baths}
+              size={feature.size}
+            />
+          ))}
         </div>
         <button className="feature-button">See More</button>
       </div>
