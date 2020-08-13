@@ -4,12 +4,12 @@ const data = {
       id: "1",
       tag: "For Rent",
       title: "2Bedroom Apartment",
-      price: "GHC2,200/month",
-      address: "Dome, K Boat Junction",
+      price: "GHC2,200/m",
+      address: "Dome",
       bedrooms: 2,
       baths: 4,
       size: 150,
-      image: require("./images/domek4.jpg"),
+      image: require("./images/home1.jpg"),
       images: [
         {
           url: "https://www.dropbox.com/s/ug3op6ra3akwmtf/domek1.jpg?raw=1"
@@ -43,8 +43,8 @@ const data = {
       id: "2",
       tag: "For Rent",
       title: "Newly Built Apartments",
-      price: "GHC2,200/month",
-      address: "East-Legon Hills school junction",
+      price: "GHC2,200/m",
+      address: "East-Legon",
       marker: {
         address: "East-Legon Hills school junction",
         lat: 5.683475,
@@ -53,7 +53,7 @@ const data = {
       bedrooms: 3,
       baths: 4,
       size: 150,
-      image: require("./images/elh1.jpg"),
+      image: require("./images/home1.jpg"),
       images: [
         {
           url: "https://www.dropbox.com/s/aw2xkkfox5exy9m/elh6.jpg?raw=1"
@@ -93,7 +93,7 @@ const data = {
       bedrooms: 4,
       baths: 4,
       size: 150,
-      image: require("./images/4h1.jpg"),
+      image: require("./images/home1.jpg"),
       images: [
         {
           url: "https://www.dropbox.com/s/82999utsaayyhoz/4h1.jpg?raw=1"
@@ -138,7 +138,7 @@ const data = {
       tag: "For Sale",
       title: "4Bedroom Ensuit",
       price: "$310,000",
-      address: "Spintex, Baatsonaa",
+      address: "Spintex",
       marker: {
         address: "Spintex, Baatsonaa",
         lat: 5.62206,
@@ -147,7 +147,7 @@ const data = {
       bedrooms: 4,
       baths: 4,
       size: 150,
-      image: require("./images/sb1.jpg"),
+      image: require("./images/home1.jpg"),
       images: [
         {
           url: "https://www.dropbox.com/s/p53uc1vuaz4y8oc/sb2.jpg?raw=1"
@@ -199,7 +199,7 @@ const data = {
       bedrooms: 3,
       baths: 4,
       size: 150,
-      image: require("./images/adj1.jpg"),
+      image: require("./images/home1.jpg"),
       images: [
         {
           url: "https://www.dropbox.com/s/jqd2utp1jhyiuvv/adj1.JPG?raw=1"
@@ -253,7 +253,7 @@ const data = {
       bedrooms: null,
       baths: null,
       size: 180,
-      image: require("./images/land1.jpg"),
+      image: require("./images/land.jpg"),
       featured: false,
       type: "land",
       details:
@@ -273,7 +273,7 @@ const data = {
       bedrooms: null,
       baths: null,
       size: 150,
-      image: require("./images/land2.jpg"),
+      image: require("./images/land.jpg"),
       featured: false,
       type: "land",
       details:
@@ -293,7 +293,7 @@ const data = {
       bedrooms: null,
       baths: null,
       size: null,
-      image: require("./images/land3.jpg"),
+      image: require("./images/land.jpg"),
       featured: false,
       type: "land",
       details:
@@ -313,7 +313,7 @@ const data = {
       bedrooms: null,
       baths: null,
       size: 150,
-      image: require("./images/land4.jpg"),
+      image: require("./images/land.jpg"),
       featured: false,
       type: "land",
       details:
