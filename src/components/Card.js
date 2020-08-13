@@ -9,35 +9,35 @@ import {
 
 import "./Card.css";
 
-function Card() {
+function Card({ image, tag, title, price, address, beds, baths, size }) {
   return (
     <div className="card-container">
-      <img src={require("../images/home1.jpg")} alt="" className="card-image" />
+      <img src={image} alt="" className="card-image" />
 
       <div className="card-tag">
-        <p>For Sale</p>
+        <p>{tag}</p>
       </div>
       <div className="card-info">
         <div className="card-info-top">
-          <p>3 bedroom Apartment</p>
-          <p className="card-info-amount">GHC 50,000</p>
+          <p>{title}</p>
+          <p className="card-info-amount">{price}</p>
         </div>
         <div className="card-info-mid">
           <FontAwesomeIcon icon={faLocationArrow} />
-          <p>Spintex</p>
+          <p>{address}</p>
         </div>
         <div className="card-info-bottom">
           <div className="card-info-bottom-part">
             <FontAwesomeIcon icon={faBed} />
-            <p>4 Beds</p>
+            <p>{beds} Beds</p>
           </div>
           <div className="card-info-bottom-part">
             <FontAwesomeIcon icon={faBath} />
-            <p>2 Baths</p>
+            <p>{baths} Baths</p>
           </div>
           <div className="card-info-bottom-part">
             <FontAwesomeIcon icon={faRulerVertical} />
-            <p>980 sqft</p>
+            <p>{size} sqft</p>
           </div>
         </div>
       </div>
