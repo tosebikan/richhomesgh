@@ -19,12 +19,14 @@ function Card({ image, tag, title, price, address, beds, baths, size }) {
       </div>
       <div className="card-info">
         <div className="card-info-top">
-          <p>{title}</p>
+          <div className="card-info-mid">
+            <FontAwesomeIcon icon={faLocationArrow} />
+            <p>{address}</p>
+          </div>
           <p className="card-info-amount">{price}</p>
         </div>
-        <div className="card-info-mid">
-          <FontAwesomeIcon icon={faLocationArrow} />
-          <p>{address}</p>
+        <div className="card-info-title">
+          <p>{title}</p>
         </div>
         <div className="card-info-bottom">
           <div className="card-info-bottom-part">
