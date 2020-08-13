@@ -81,7 +81,7 @@
   display: flex;
   align-items: center;
   margin: 0;
-  font-size: 9px;
+  font-size: 8px;
   font-weight: 700;
   color: white;
 }
@@ -89,6 +89,13 @@
 .card-info-mid p {
   margin: 0;
   margin-left: 5px;
+}
+.card-info-title p {
+  color: #fff;
+  font-size: 8px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0;
 }
 
 .card-info-bottom {
@@ -138,6 +145,10 @@
   }
   .card-info-mid p {
     margin-left: 7px;
+  }
+
+  .card-info-title p {
+    font-size: 16px;
   }
 
   .card-info-bottom {
