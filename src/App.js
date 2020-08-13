@@ -12,6 +12,10 @@ import {
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
 import HomeScreen from "./screens/HomeScreen";
+import PropertiesScreen from "./screens/PropertiesScreen";
+import AboutUsScreen from "./screens/AboutUsScreen";
+import FAQScreen from "./screens/FAQScreen";
+import ContactScreen from "./screens/ContactScreen";
 
 function App() {
   const toggleMenu = () => {
@@ -25,11 +29,11 @@ function App() {
             <Link to="/">RichHomes</Link>
           </div>
           <div className="header-links">
-            <Link>Home</Link>
-            <Link>Properties</Link>
-            <Link>About Us</Link>
-            <Link>FAQ</Link>
-            <Link>Contact</Link>
+            <Link to="/">Home</Link>
+            <Link to="/properties">Properties</Link>
+            <Link to="about-us">About Us</Link>
+            <Link to="faq">FAQ</Link>
+            <Link to="contact">Contact</Link>
             <button
               id="head-btn"
               className="header-button"
@@ -45,26 +49,36 @@ function App() {
           <ul>
             <li>
               <FontAwesomeIcon icon={faHome} className="sidebar-icon" />
-              <Link>Home</Link>
+              <Link onClick={toggleMenu} to="/">
+                Home
+              </Link>
             </li>
             <li>
               <FontAwesomeIcon icon={faBuilding} className="sidebar-icon" />
-              <Link>Properties</Link>
+              <Link to="/properties" onClick={toggleMenu}>
+                Properties
+              </Link>
             </li>
             <li>
               <FontAwesomeIcon icon={faAddressCard} className="sidebar-icon" />
-              <Link>About Us</Link>
+              <Link to="/about-us" onClick={toggleMenu}>
+                About Us
+              </Link>
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faQuestionCircle}
                 className="sidebar-icon"
               />
-              <Link>FAQ</Link>
+              <Link to="/faq" onClick={toggleMenu}>
+                FAQ
+              </Link>
             </li>
             <li>
               <FontAwesomeIcon icon={faAddressBook} className="sidebar-icon" />
-              <Link>Contact</Link>
+              <Link to="contact" onClick={toggleMenu}>
+                Contact
+              </Link>
             </li>
           </ul>
         </aside>
@@ -72,6 +86,10 @@ function App() {
         <main>
           <div>
             <Route path="/" component={HomeScreen} exact={true} />
+            <Route path="/properties" component={PropertiesScreen} />
+            <Route path="/about-us" component={AboutUsScreen} />
+            <Route path="/faq" component={FAQScreen} />
+            <Route path="/contact" component={ContactScreen} />
           </div>
         </main>
         <footer className="footer">
