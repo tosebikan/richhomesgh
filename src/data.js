@@ -3,7 +3,7 @@ const data = {
     {
       id: "1",
       tag: "For Rent",
-      title: "2Bedroom Apartment",
+      title: "2 Bedroom Apartment",
       price: "GHC2,200/m",
       address: "Dome",
       bedrooms: 2,
@@ -82,7 +82,7 @@ const data = {
     {
       id: "3",
       tag: "ForSale",
-      title: "4Bedroom House",
+      title: "4 Bedroom House",
       price: "$410,000",
       address: "East-Legon",
       marker: {
@@ -136,7 +136,7 @@ const data = {
     {
       id: "4",
       tag: "For Sale",
-      title: "4Bedroom Ensuit",
+      title: "4 Bedroom Ensuit",
       price: "$310,000",
       address: "Spintex",
       marker: {
@@ -188,7 +188,7 @@ const data = {
     {
       id: "5",
       tag: "For Sale",
-      title: "3Bedroom Townhouse",
+      title: "3 Bedroom Townhouse",
       price: "$250,000",
       address: "adjiringanor",
       marker: {
