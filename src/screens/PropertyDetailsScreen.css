@@ -1,0 +1,9 @@
+.property-container {
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+.property-title {
+  padding-top: 50px;
+}
