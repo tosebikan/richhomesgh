@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLocationArrow,
@@ -9,10 +10,12 @@ import {
 
 import "./Card.css";
 
-function Card({ image, tag, title, price, address, beds, baths, size }) {
+function Card({ image, tag, title, price, address, beds, baths, size, link }) {
   return (
     <div className="card-container">
-      <img src={image} alt="" className="card-image" />
+      <Link to={link}>
+        <img src={image} alt="" className="card-image" />
+      </Link>
 
       <div className="card-tag">
         <p>{tag}</p>
