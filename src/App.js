@@ -88,7 +88,7 @@ function App() {
           <div>
             <Route path="/" component={HomeScreen} exact={true} />
             <Route path="/properties" component={PropertiesScreen} />
-            <Route path="/properties/:id" component={PropertyDetailsScreen} />
+            <Route path="/property/:id" component={PropertyDetailsScreen} />
             <Route path="/about-us" component={AboutUsScreen} />
             <Route path="/faq" component={FAQScreen} />
             <Route path="/contact" component={ContactScreen} />
