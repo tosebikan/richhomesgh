@@ -56,6 +56,7 @@ function HomeScreen() {
         <div className="featured-gallery">
           {featured.map((feature) => (
             <Card
+              key={feature.id}
               tag={feature.tag}
               image={feature.image}
               title={feature.title}
@@ -64,6 +65,7 @@ function HomeScreen() {
               beds={feature.bedrooms}
               baths={feature.baths}
               size={feature.size}
+              link={`property/${feature.id}`}
             />
           ))}
         </div>
