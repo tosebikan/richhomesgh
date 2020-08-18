@@ -13,6 +13,7 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
 import HomeScreen from "./screens/HomeScreen";
 import PropertiesScreen from "./screens/PropertiesScreen";
+import PropertyDetailsScreen from "./screens/PropertyDetailsScreen";
 import AboutUsScreen from "./screens/AboutUsScreen";
 import FAQScreen from "./screens/FAQScreen";
 import ContactScreen from "./screens/ContactScreen";
@@ -87,6 +88,7 @@ function App() {
           <div>
             <Route path="/" component={HomeScreen} exact={true} />
             <Route path="/properties" component={PropertiesScreen} />
+            <Route path="/properties/:id" component={PropertyDetailsScreen} />
             <Route path="/about-us" component={AboutUsScreen} />
             <Route path="/faq" component={FAQScreen} />
             <Route path="/contact" component={ContactScreen} />
