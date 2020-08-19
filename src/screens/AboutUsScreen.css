@@ -1,0 +1,57 @@
+.aboutus-container {
+  background-color: #000;
+  color: #fff;
+  /* height: 100vh; */
+}
+
+.aboutus-hero {
+  padding-top: 100px;
+}
+
+.aboutus-hero img {
+  width: 95vw;
+  height: 30vh;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.aboutus-hero h1 {
+  font-size: 21px;
+}
+
+.aboutus-hero-text {
+  margin: 0;
+  padding: 0;
+}
+.aboutus-hero-text p {
+  font-size: 16px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* images section*/
+
+.aboutus-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.women-image {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  object-position: right;
+  border-top-right-radius: 255px;
+  margin: 20px;
+}
+
+.man-image {
+  height: 250px;
+  width: 185px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100px 0 100px 100px;
+}
