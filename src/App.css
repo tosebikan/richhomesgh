@@ -64,6 +64,11 @@ ul {
   font-size: 1.5rem;
   cursor: pointer;
   color: white;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.header-button:active {
+  transform: scale(1.2);
 }
 
 #header-hr {
@@ -137,21 +142,27 @@ ul {
 /* footer */
 
 .footer {
+  background-color: #000;
+  border-top-left-radius: 100px;
+}
+
+.footer-container {
   background-color: #e3715b;
   padding: 20px;
   margin-bottom: 0;
   border-top-left-radius: 100px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   color: #fff;
 }
 
 .footer-top {
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* align-items: center; */
-  padding-left: 50px;
+  margin-left: 50px;
 }
 
 .footer-top h4 {
