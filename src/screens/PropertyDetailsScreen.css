@@ -1,9 +1,134 @@
-.property-container {
-  height: 100vh;
+.property-details-container {
+  height: 100%;
   background-color: #000;
   color: #fff;
+  padding: 20px;
 }
 
-.property-title {
-  padding-top: 50px;
+.property-details-info {
+  padding-top: 80px;
+}
+
+.property-img {
+  width: 80vw;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.property-details-title {
+  text-align: left;
+  padding-left: 5vw;
+  margin-bottom: 0;
+  /* color: #4a4a4a; */
+}
+
+.property-details-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.property-details-section-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80vw;
+  padding-bottom: 0;
+}
+.property-details-section-top p {
+  margin-bottom: 0;
+}
+.property-details-info-title {
+  font-weight: bold;
+  /* color: #4a4a4a; */
+}
+
+.property-details-tag {
+  color: #f5a623;
+}
+
+.property-details-section-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.property-details-address {
+  font-size: 12px;
+  /* color: #4a4a4a; */
+}
+
+.property-details-price {
+  display: flex;
+  align-items: center;
+}
+.property-details-price-top {
+  font-size: 12px;
+  /* color: #4a4a4a; */
+}
+.property-details-price-bottom {
+  font-size: 16px;
+  padding-left: 5px;
+  color: #f5a623;
+}
+
+.property-details-hr {
+  width: 80vw;
+  border: none;
+  border-top: 1px solid #4a4a4a;
+}
+/* property details tags */
+.property-details-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.property-detials-tags-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.property-details-tag-title {
+  margin-bottom: 5px;
+}
+
+.property-details-tags-section {
+  display: flex;
+  align-items: center;
+}
+.property-details-tags-section p {
+  margin: 0;
+  padding-right: 5px;
+}
+
+/* property-details-description */
+
+.property-details-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.property-details-title {
+  padding-left: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.property-details-text {
+  /* text-align: left; */
+
+  /* margin-left: 20px; */
+  padding-left: 50px;
+  text-align: left;
+  font-size: 13px;
 }
