@@ -53,7 +53,7 @@ const data = {
       bedrooms: 3,
       baths: 4,
       size: 150,
-      image: require("./images/home1.jpg"),
+      image: require("./images/home2.jpg"),
       images: [
         {
           url: "https://www.dropbox.com/s/aw2xkkfox5exy9m/elh6.jpg?raw=1"
@@ -93,7 +93,7 @@ const data = {
       bedrooms: 4,
       baths: 4,
       size: 150,
-      image: require("./images/home1.jpg"),
+      image: require("./images/home3.jpg"),
       images: [
         {
           url: "https://www.dropbox.com/s/82999utsaayyhoz/4h1.jpg?raw=1"
@@ -147,7 +147,7 @@ const data = {
       bedrooms: 4,
       baths: 4,
       size: 150,
-      image: require("./images/home1.jpg"),
+      image: require("./images/home4.jpg"),
       images: [
         {
           url: "https://www.dropbox.com/s/p53uc1vuaz4y8oc/sb2.jpg?raw=1"
