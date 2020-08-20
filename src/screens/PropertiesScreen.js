@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 function PropertiesScreen() {
   return (
@@ -6,6 +7,7 @@ function PropertiesScreen() {
       <div style={{ paddingTop: 50 }}>
         <h1>Properties</h1>
       </div>
+      <Footer />
     </div>
   );
 }
