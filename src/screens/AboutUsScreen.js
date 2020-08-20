@@ -1,5 +1,12 @@
 import React from "react";
 import "./AboutUsScreen.css";
+import Footer from "../components/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHandHoldingUsd,
+  faHandshake,
+  faHome
+} from "@fortawesome/free-solid-svg-icons";
 
 function AboutUsScreen() {
   return (
@@ -28,6 +35,38 @@ function AboutUsScreen() {
 
         <img src={require("../images/man.jpg")} alt="" className="man-image" />
       </div>
+      <div className="services">
+        <div className="services-title">
+          <h2>Why work with us</h2>
+        </div>
+        <div className="services-items-container">
+          <div className="services-item">
+            <FontAwesomeIcon
+              icon={faHandHoldingUsd}
+              className="services-icon"
+            />
+            <h3>Competitive Prices</h3>
+            <p>
+              We ensure the properties listed on our platform are valued based
+              on current market prices
+            </p>
+          </div>
+          <div className="services-item">
+            <FontAwesomeIcon icon={faHandshake} className="services-icon" />
+            <h3>Ease of service</h3>
+            <p>We ensure the entire process is done fast and effectively.</p>
+          </div>
+          <div className="services-item">
+            <FontAwesomeIcon icon={faHome} className="services-icon" />
+            <h3>Access to Premium properties</h3>
+            <p>
+              We provide access to the best properties in ghana at genuine
+              prices
+            </p>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
