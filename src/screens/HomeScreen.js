@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,6 +14,7 @@ import {
 import data from "../data";
 
 import Card from "../components/Card";
+import Footer from "../components/Footer";
 
 function HomeScreen() {
   const settings = {
@@ -69,7 +71,9 @@ function HomeScreen() {
             />
           ))}
         </div>
-        <button className="feature-button">See More</button>
+        <Link to="/properties" className="feature-button-container">
+          <button className="feature-button">See More</button>
+        </Link>
       </div>
       <div className="info">
         <div className="info-a">
@@ -109,7 +113,9 @@ function HomeScreen() {
           </p>
           <p>Bringing security to the process of home ownership of renting.</p>
 
-          <button className="feature-button">Learn More</button>
+          <Link to="/about-us">
+            <button className="feature-button">Learn More</button>
+          </Link>
         </div>
       </div>
 
@@ -176,6 +182,7 @@ function HomeScreen() {
           <button className="question-button">Send</button>
         </form>
       </div>
+      <Footer />
     </div>
   );
 }
