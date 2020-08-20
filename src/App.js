@@ -6,10 +6,8 @@ import {
   faBuilding,
   faAddressCard,
   faQuestionCircle,
-  faAddressBook,
-  faEnvelope
+  faAddressBook
 } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
 import HomeScreen from "./screens/HomeScreen";
 import PropertiesScreen from "./screens/PropertiesScreen";
@@ -32,9 +30,9 @@ function App() {
           <div className="header-links">
             <Link to="/">Home</Link>
             <Link to="/properties">Properties</Link>
-            <Link to="about-us">About Us</Link>
-            <Link to="faq">FAQ</Link>
-            <Link to="contact">Contact</Link>
+            <Link to="/about-us">About Us</Link>
+            <Link to="/faq">FAQ</Link>
+            <Link to="/contact">Contact</Link>
             <button
               id="head-btn"
               className="header-button"
@@ -77,7 +75,7 @@ function App() {
             </li>
             <li>
               <FontAwesomeIcon icon={faAddressBook} className="sidebar-icon" />
-              <Link to="contact" onClick={toggleMenu}>
+              <Link to="/contact" onClick={toggleMenu}>
                 Contact
               </Link>
             </li>
@@ -94,38 +92,6 @@ function App() {
             <Route path="/contact" component={ContactScreen} />
           </div>
         </main>
-        <footer className="footer">
-          <div className="footer-container">
-            <div className="footer-top">
-              <h4>RichHomes Properties</h4>
-              <div className="footer-top-item">
-                <p>Services</p>
-                <hr />
-              </div>
-              <div className="footer-top-item">
-                <p>Contact Us</p>
-                <hr />
-                <div className="footer-contact-item">
-                  <FontAwesomeIcon icon={faEnvelope} className="footer-icon" />
-                  <FontAwesomeIcon icon={faInstagram} className="footer-icon" />
-                  <FontAwesomeIcon icon={faFacebook} className="footer-icon" />
-                </div>
-              </div>
-            </div>
-            <div className="footer-bottom">
-              <p>
-                <span
-                  role="img"
-                  aria-label="copyright"
-                  className="footer-copyrigt"
-                >
-                  ©️
-                </span>
-                2020 All Rights Reserved By oltostudios
-              </p>{" "}
-            </div>
-          </div>
-        </footer>
       </div>
     </Router>
   );
