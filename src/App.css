@@ -142,16 +142,13 @@ ul {
 /* footer */
 
 .footer {
-  background-color: #000;
+  background-color: #e3715b;
+  padding: 20px;
   border-top-left-radius: 100px;
 }
 
 .footer-container {
-  background-color: #e3715b;
-  padding: 20px;
   margin-bottom: 0;
-  border-top-left-radius: 100px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   color: #fff;
