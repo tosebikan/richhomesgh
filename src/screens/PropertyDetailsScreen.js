@@ -1,12 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faLocationArrow,
   faBed,
   faBath,
   faRulerVertical
 } from "@fortawesome/free-solid-svg-icons";
 import "./PropertyDetailsScreen.css";
+import Footer from "../components/Footer";
 import data from "../data";
 
 function PropertyDetailsScreen(props) {
@@ -67,6 +67,7 @@ function PropertyDetailsScreen(props) {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
