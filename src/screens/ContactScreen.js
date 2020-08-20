@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 function ContactScreen() {
   return (
@@ -6,6 +7,7 @@ function ContactScreen() {
       <div style={{ paddingTop: 50 }}>
         <h1>Contact</h1>
       </div>
+      <Footer />
     </div>
   );
 }
