@@ -118,6 +118,10 @@
   }
 }
 
+.feature-button-container {
+  margin: 0 auto;
+}
+
 .feature-button {
   margin: 50px auto;
   box-shadow: 0 10px 20px rgba(245, 166, 35, 0.5);
