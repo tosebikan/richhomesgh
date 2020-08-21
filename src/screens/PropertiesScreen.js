@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "./PropertiesScreen.css";
 import Footer from "../components/Footer";
-// import Tab from "../components/Tab";
+import Card from "../components/Card";
 import data from "../data.js";
 
 function PropertiesScreen() {
   const [active, setActive] = useState("house");
 
-  const houses = data.properties.filter((x) => x.type == "house");
-  const lands = data.properties.filter((x) => x.type == "land");
+  const houses = data.properties.filter((x) => x.type === "house");
+  const apartments = data.properties.filter((x) => x.type === "apartments");
+  const lands = data.properties.filter((x) => x.type === "land");
 
   const handleClick = (e) => {
     setActive(e.target.id);
@@ -48,16 +49,31 @@ function PropertiesScreen() {
             </Tab>
           </TabList>
 
-          <h1>Properties</h1>
+          <h2>Properties</h2>
 
           <TabPanel>
-            <h2>Any content 1</h2>
+            <h4>Houses</h4>
+            <div className="featured-gallery">
+              {houses.map((house) => (
+                <Card
+                  image={house.image}
+                  tag={house.tag}
+                  title={house.title}
+                  price={house.price}
+                  address={house.price}
+                  beds={house.beds}
+                  baths={house.baths}
+                  size={house.size}
+                  link={`/property/${house.id}`}
+                />
+              ))}
+            </div>
           </TabPanel>
           <TabPanel>
-            <h2>Any content 2</h2>
+            <h4>Any content 2</h4>
           </TabPanel>
           <TabPanel>
-            <h2>Any content 3</h2>
+            <h4>Any content 3</h4>
           </TabPanel>
         </Tabs>
       </div>
