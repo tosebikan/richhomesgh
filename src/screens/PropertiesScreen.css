@@ -1,6 +1,12 @@
 #root {
   height: 100%;
 }
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
 .properties-container {
   background-color: #000;
   color: #fff;
@@ -15,18 +21,27 @@
 
 .tab-title-container {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+  padding: 0;
 }
 
 .tab-title {
-  margin-left: 20px;
+  margin-left: 10px;
+}
+.tab-title:focus {
+  outline: none;
 }
 
 .active {
   background: #000;
   border-color: #f5a623;
   color: #fff;
+}
+
+.active:focus {
+  outline: none;
 }
 
 .tab-title button {
@@ -40,6 +55,13 @@
 .tab-title button:active {
   transform: scale(1);
 }
+
 .tab-title button:focus {
   outline: none;
+}
+
+@media (min-width: 1000px) {
+  .tab-title {
+    margin-left: 20px;
+  }
 }
