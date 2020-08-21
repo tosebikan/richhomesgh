@@ -9,7 +9,7 @@ function PropertiesScreen() {
   const [active, setActive] = useState("house");
 
   const houses = data.properties.filter((x) => x.type === "house");
-  const apartments = data.properties.filter((x) => x.type === "apartments");
+  const apartments = data.properties.filter((x) => x.type === "apartment");
   const lands = data.properties.filter((x) => x.type === "land");
 
   const handleClick = (e) => {
@@ -70,10 +70,40 @@ function PropertiesScreen() {
             </div>
           </TabPanel>
           <TabPanel>
-            <h4>Any content 2</h4>
+            <h4>Apartments</h4>
+            <div className="featured-gallery">
+              {apartments.map((apartment) => (
+                <Card
+                  image={apartment.image}
+                  tag={apartment.tag}
+                  title={apartment.title}
+                  price={apartment.price}
+                  address={apartment.price}
+                  beds={apartment.beds}
+                  baths={apartment.baths}
+                  size={apartment.size}
+                  link={`/property/${apartment.id}`}
+                />
+              ))}
+            </div>
           </TabPanel>
           <TabPanel>
-            <h4>Any content 3</h4>
+            <h4>Lands</h4>
+            <div className="featured-gallery">
+              {lands.map((land) => (
+                <Card
+                  image={land.image}
+                  tag={land.tag}
+                  title={land.title}
+                  price={land.price}
+                  address={land.price}
+                  beds={land.beds}
+                  baths={land.baths}
+                  size={land.size}
+                  link={`/property/${land.id}`}
+                />
+              ))}
+            </div>
           </TabPanel>
         </Tabs>
       </div>
