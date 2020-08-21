@@ -13,7 +13,7 @@ import "./Card.css";
 function Card({ image, tag, title, price, address, beds, baths, size, link }) {
   return (
     <div className="card-container">
-      <Link to={link}>
+      <Link to={link} className="card-image-container">
         <img src={image} alt="" className="card-image" />
       </Link>
 
