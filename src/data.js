@@ -31,7 +31,7 @@ const data = {
         }
       ],
       featured: true,
-      type: "house",
+      type: "apartment",
       details: "Brand new two bedroom apartment for rental.",
       marker: {
         address: "Dome, K Boat Junction",
@@ -75,7 +75,7 @@ const data = {
         }
       ],
       featured: true,
-      type: "house",
+      type: "apartment",
       details:
         "Recently built apartments up for rent at East-legon Hills school junction."
     },
@@ -235,7 +235,7 @@ const data = {
       size: 150,
       image: require("./images/home1.jpg"),
       featured: false,
-      type: "house",
+      type: "apartment",
       details:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
     },
