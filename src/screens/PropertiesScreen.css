@@ -1,0 +1,41 @@
+.properties-container {
+  background-color: #000;
+  color: #fff;
+}
+
+.categories-container {
+  padding-top: 80px;
+  margin: 0;
+  height: 100%;
+}
+
+.tab-title-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tab-title {
+  margin-left: 20px;
+}
+
+.active {
+  background: #000;
+  border-color: #f5a623;
+  color: #fff;
+}
+
+.tab-title button {
+  padding: 8px 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 20px;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.tab-title button:active {
+  transform: scale(1);
+}
+.tab-title button:focus {
+  outline: none;
+}
