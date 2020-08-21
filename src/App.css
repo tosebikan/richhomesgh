@@ -1,10 +1,18 @@
-.App {
-  text-align: center;
+/* .App {
+
 }
 html,
 body {
   height: 100%;
   width: 100%;
+} */
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  text-align: center;
 }
 
 a {
