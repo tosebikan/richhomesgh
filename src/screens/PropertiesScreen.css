@@ -1,12 +1,16 @@
+#root {
+  height: 100%;
+}
 .properties-container {
   background-color: #000;
   color: #fff;
+  heigh: 100%;
 }
 
 .categories-container {
   padding-top: 80px;
   margin: 0;
-  height: 100%;
+  margin-bottom: 50px;
 }
 
 .tab-title-container {
