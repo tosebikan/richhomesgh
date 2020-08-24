@@ -1,5 +1,19 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLocationArrow,
+  faPhone,
+  faEnvelope,
+  faHeart
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faWhatsapp,
+  faTwitter
+} from "@fortawesome/free-brands-svg-icons";
 import "./ContactScreen.css";
+
 import Footer from "../components/Footer";
 import MyMap from "../components/MyMap";
 
@@ -44,6 +58,51 @@ function ContactScreen() {
         <h2>Contact info</h2>
         <p>You can react us via the following mediums</p>
       </div>
+      <div className="contact-info-section">
+        <div className="contact-info-group">
+          <div className="contact-info-item">
+            <FontAwesomeIcon icon={faLocationArrow} className="contact-icon" />
+            <p>Address</p>
+          </div>
+          <p className="contact-info-bottom">18 Junction Spintex, Accra</p>
+        </div>
+        <div className="contact-info-group">
+          <div className="contact-info-item">
+            <FontAwesomeIcon icon={faPhone} className="contact-icon" />
+            <p>Call Us</p>
+          </div>
+          <p className="contact-info-bottom">054 1356 456 - 054 1356 456</p>
+        </div>
+        <div className="contact-info-group">
+          <div className="contact-info-item">
+            <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
+            <p>Email us</p>
+          </div>
+          <p className="contact-info-bottom">customercare@richhomesgh.com</p>
+        </div>
+        <div className="contact-info-group">
+          <div className="contact-info-item">
+            <FontAwesomeIcon icon={faHeart} className="contact-icon" />
+            <p>social links</p>
+          </div>
+          <div>
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className="social-contact-icon"
+            />
+            <FontAwesomeIcon
+              icon={faFacebook}
+              className="social-contact-icon"
+            />
+            <FontAwesomeIcon icon={faTwitter} className="social-contact-icon" />
+            <FontAwesomeIcon
+              icon={faWhatsapp}
+              className="social-contact-icon"
+            />
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
