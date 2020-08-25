@@ -1,7 +1,7 @@
 .faq-container {
   background-color: #000;
   color: #fff;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .faq-hero {
@@ -21,7 +21,7 @@
 }
 
 .faq-hero h1 {
-  font-size: 16px;
+  font-size: 21px;
 }
 
 .faq-hero-title {
@@ -33,6 +33,7 @@
 
 .faq-section {
   padding: 20px;
+  height: 62vh;
 }
 
 @media (min-width: 1000px) {
