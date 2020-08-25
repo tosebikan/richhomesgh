@@ -114,7 +114,7 @@ ul {
 /* sidebar */
 .sidebar {
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   right: 0;
   width: 50%;
   /* background-color: #e3715b; */
