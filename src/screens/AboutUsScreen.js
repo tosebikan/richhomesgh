@@ -45,7 +45,7 @@ function AboutUsScreen() {
               icon={faHandHoldingUsd}
               className="services-icon"
             />
-            <h3>Competitive Prices</h3>
+            <h3 style={{ color: "#fff" }}>Competitive Prices</h3>
             <p>
               We ensure the properties listed on our platform are valued based
               on current market prices
@@ -53,12 +53,12 @@ function AboutUsScreen() {
           </div>
           <div className="services-item">
             <FontAwesomeIcon icon={faHandshake} className="services-icon" />
-            <h3>Ease of service</h3>
+            <h3 style={{ color: "#fff" }}>Ease of service</h3>
             <p>We ensure the entire process is done fast and effectively.</p>
           </div>
           <div className="services-item">
             <FontAwesomeIcon icon={faHome} className="services-icon" />
-            <h3>Access to Premium properties</h3>
+            <h3 style={{ color: "#fff" }}>Access to Premium properties</h3>
             <p>
               We provide access to the best properties in ghana at genuine
               prices
