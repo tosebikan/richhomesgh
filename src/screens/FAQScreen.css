@@ -30,6 +30,11 @@
 .faq-button {
   margin-top: 0;
 }
+
+.faq-section {
+  padding: 20px;
+}
+
 @media (min-width: 1000px) {
   .faq-hero {
     height: 30vh;
