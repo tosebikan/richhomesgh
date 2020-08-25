@@ -131,6 +131,12 @@ ul {
 .sidebar a {
   color: white;
   margin-left: 10px;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.sidebar a:hover {
+  color: #000;
+  transform: scale(2);
 }
 
 .sidebar li {
