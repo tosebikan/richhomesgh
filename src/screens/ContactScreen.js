@@ -49,7 +49,7 @@ function ContactScreen() {
                 <label>Message</label>
                 <textarea name="message" placeholder="message" />
               </div>
-              <button className="feature-button white">Send Message</button>
+              <button className="feature-button">Send Message</button>
             </form>
           </div>
         </div>
