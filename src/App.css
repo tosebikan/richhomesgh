@@ -50,7 +50,7 @@ ul {
   position: fixed;
 
   width: 90%;
-  z-index: 2;
+  z-index: 20;
   display: flex;
   justify-content: space-between;
   align-items: center;
