@@ -10,13 +10,13 @@ button:focus {
 .properties-container {
   background-color: #000;
   color: #fff;
-  heigh: 100%;
 }
 
 .categories-container {
   padding-top: 80px;
   margin: 0;
   margin-bottom: 50px;
+  height: 80vh;
 }
 
 .tab-title-container {
