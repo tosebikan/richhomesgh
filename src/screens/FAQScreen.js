@@ -1,11 +1,13 @@
 import React from "react";
+import "./FAQScreen.css";
 import Footer from "../components/Footer";
 
 function FAQScreen() {
   return (
-    <div style={{ backgroundColor: "#000", color: "#fff", height: "100vh" }}>
-      <div style={{ paddingTop: 50 }}>
-        <h1>FAQ</h1>
+    <div className="faq-container">
+      <div className="faq-hero">
+        <h1 className="faq-hero-title">Frequently Asked Questions</h1>
+        <button className="faq-button feature-button">Ask a question</button>
       </div>
       <Footer />
     </div>
