@@ -15,6 +15,7 @@ import PropertyDetailsScreen from "./screens/PropertyDetailsScreen";
 import AboutUsScreen from "./screens/AboutUsScreen";
 import FAQScreen from "./screens/FAQScreen";
 import ContactScreen from "./screens/ContactScreen";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const toggleMenu = () => {
@@ -22,6 +23,7 @@ function App() {
   };
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <header className="header">
           <div className="brand">
