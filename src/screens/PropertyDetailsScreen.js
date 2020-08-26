@@ -1,4 +1,7 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBed,
@@ -13,11 +16,36 @@ import data from "../data";
 function PropertyDetailsScreen(props) {
   const property = data.properties.find((x) => x.id === props.match.params.id);
   const position = [property.marker.lat, property.marker.lng];
+
+  if (!props.match.params.id) return null;
+
+  const settings = {
+    dots: true,
+    fade: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    className: "slides"
+  };
+
   return (
     <div className="property-details-container">
       <div className="property-details-container-group">
         <div className="property-details-info">
-          <img src={property.image} alt="" className="property-img" />
+          <div className="SliderContainer">
+            <Slider {...settings}>
+              {property.images.map((image) => (
+                <div key={image.url}>
+                  <img src={image.url} alt="" className="property-img" />
+                </div>
+              ))}
+            </Slider>
+          </div>
+
           <h4 className="property-details-title"> Property Details</h4>
           <div className="property-details-section">
             <div className="property-details-section-top">
