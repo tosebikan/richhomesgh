@@ -33,6 +33,7 @@ function HomeScreen() {
   const featured = data.properties.filter(
     (property) => property.featured === true
   );
+
   return (
     <div>
       <div className="hero">
