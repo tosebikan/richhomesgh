@@ -8,11 +8,43 @@
   padding-top: 80px;
 }
 
+.SliderContainer {
+  margin: 0 auto;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  margin: 0;
+}
+
+.slides {
+  position: relative;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+.slides .slick-prev {
+  left: 15%;
+}
+
+.slides .slick-next {
+  right: 15%;
+}
+
 .property-img {
   width: 80vw;
   height: 40vh;
   object-fit: cover;
   border-radius: 20px;
+  margin: 0 auto;
 }
 
 .property-details-title {
