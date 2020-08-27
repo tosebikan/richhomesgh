@@ -94,7 +94,9 @@ function HomeScreen() {
             Let us create a tailored strategic marketing plan and keep track of
             the selling or renting process.
           </p>
-          <button className="info-button">Contact Us</button>
+          <Link to="/contact">
+            <button className="info-button">Contact Us</button>
+          </Link>
         </div>
       </div>
 
