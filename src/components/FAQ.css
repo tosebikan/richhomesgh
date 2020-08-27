@@ -3,6 +3,13 @@
   border-radius: 20px;
 }
 
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
 @media (min-width: 1000px) {
   .accordion {
     display: grid;
@@ -27,6 +34,9 @@
 
 .accordion__button:hover {
   background-color: #ddd;
+}
+.accordion__button:focus {
+  outline: none;
 }
 
 .accordion__button:before {
