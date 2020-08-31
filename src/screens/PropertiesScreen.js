@@ -47,9 +47,10 @@ function PropertiesScreen() {
                 Lands
               </button>
             </Tab>
+            <div className="property-hero-title">
+              <h4>Properties</h4>
+            </div>
           </TabList>
-
-          <h2>Properties</h2>
 
           <TabPanel>
             <h4>Houses</h4>
@@ -60,7 +61,7 @@ function PropertiesScreen() {
                   tag={house.tag}
                   title={house.title}
                   price={house.price}
-                  address={house.price}
+                  address={house.address}
                   beds={house.beds}
                   baths={house.baths}
                   size={house.size}
