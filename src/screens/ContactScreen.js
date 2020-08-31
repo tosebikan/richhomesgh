@@ -71,14 +71,25 @@ function ContactScreen() {
             <FontAwesomeIcon icon={faPhone} className="contact-icon" />
             <p>Call Us</p>
           </div>
-          <p className="contact-info-bottom">054 1356 456 - 054 1356 456</p>
+          <div className="contact-info-bottom">
+            <a href="tel:+123456890">
+              <button className="feature-button">054 1356 456</button>
+            </a>
+            <a href="tel:+123456890">
+              <button className="feature-button">054 1356 456</button>
+            </a>
+          </div>
         </div>
         <div className="contact-info-group">
           <div className="contact-info-item">
             <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
             <p>Email us</p>
           </div>
-          <p className="contact-info-bottom">customercare@richhomesgh.com</p>
+          <a href="mailto:customercare@richhomesgh.com">
+            <p className="contact-info-bottom email">
+              customercare@richhomesgh.com
+            </p>{" "}
+          </a>
         </div>
         <div className="contact-info-group">
           <div className="contact-info-item">
