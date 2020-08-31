@@ -16,14 +16,14 @@ button:focus {
   padding-top: 80px;
   margin: 0;
   margin-bottom: 50px;
-  /* height: 80vh; */
 }
 
 .tab-title-container {
+  max-width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
   padding: 0;
 }
 
@@ -31,6 +31,13 @@ button:focus {
   position: absolute;
   right: 0;
   padding-right: 20px;
+}
+
+@media (max-width: 400px) {
+  .property-hero-title {
+    position: relative;
+    padding-left: 20px;
+  }
 }
 
 .tab-title {
@@ -51,6 +58,8 @@ button:focus {
 }
 
 .tab-title button {
+  color: #fff;
+  background-color: inherit;
   padding: 8px 20px;
   border-width: 1px;
   border-style: solid;
