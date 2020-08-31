@@ -14,7 +14,8 @@
 }
 
 .hero-text {
-  padding-top: 60vh;
+  position: absolute;
+  bottom: 80px;
   padding-left: 16px;
   color: white;
   text-align: left;
@@ -37,14 +38,15 @@
 }
 
 .hero-icon-container {
-  margin: 0 auo 0;
 }
 
 .hero-icon {
+  margin: 0 auto;
   position: absolute;
   bottom: 10px;
+  left: 0;
+  right: 0;
   color: white;
-
   animation: bounce;
   animation-duration: 2s;
   animation-iteration-count: infinite;
