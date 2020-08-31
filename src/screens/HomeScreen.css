@@ -10,7 +10,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .hero-text {
@@ -71,6 +71,7 @@
 @media (min-width: 1023px) {
   .hero {
     height: 100vh;
+    background-attachment: fixed;
   }
   .hero-text {
     padding-top: 25%;
