@@ -43,7 +43,7 @@
 .hero-icon {
   margin: 0 auto;
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   left: 0;
   right: 0;
   color: white;
