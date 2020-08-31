@@ -110,7 +110,7 @@
 .contact-info-group {
   display: flex;
   flex-direction: column;
-  align-self: center;
+  align-items: center;
   margin: 20px;
   transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -123,6 +123,16 @@
 
 .contact-info-bottom {
   margin-top: 0;
+}
+
+.email {
+  color: #f5a623;
+}
+.contact-info-bottom button {
+  padding: 8px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 20px;
 }
 
 .contact-icon {
@@ -145,5 +155,6 @@
     padding: 20px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
