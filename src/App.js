@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -26,6 +27,9 @@ function App() {
       <ScrollToTop />
       <div className="App">
         <header className="header">
+          <Helmet>
+            <title>Richhomes</title>
+          </Helmet>
           <div className="brand">
             <Link to="/">RichHomes</Link>
           </div>
