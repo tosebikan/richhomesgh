@@ -192,6 +192,7 @@ function HomeScreen() {
             name="email"
             placeholder="Enter your email"
             className="question-input"
+            required
           />
           <button className="question-button" type="submit">
             Send
