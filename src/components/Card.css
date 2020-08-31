@@ -33,6 +33,7 @@
 }
 
 .card-image-container:hover {
+  transform: scale(1.002, 1.002);
 }
 
 .card-tag {
