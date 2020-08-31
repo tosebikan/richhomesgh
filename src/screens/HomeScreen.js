@@ -172,21 +172,17 @@ function HomeScreen() {
           </div>
         </Slider>
       </div>
-      {/*<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
         <input type="email" name="email" />
-      </form>*/}
+        <textarea name="message"></textarea>
+      </form>
 
       <div className="question">
         <h2> Have a quick question ?</h2>
         <p>send us your mail and we’ll get in touch with you </p>
-        <form
-          className="question-form"
-          name="contact"
-          method="post"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-        >
-          {/*<input type="hidden" name="form-name" value="contact" />*/}
+        <form className="question-form" name="contact" method="post">
+          <input type="hidden" name="form-name" value="contact" />
           <input
             type="email"
             name="email"
