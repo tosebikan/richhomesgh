@@ -57,6 +57,7 @@ function PropertiesScreen() {
             <div className="featured-gallery">
               {houses.map((house) => (
                 <Card
+                  key={house.id}
                   image={house.image}
                   tag={house.tag}
                   title={house.title}
@@ -75,6 +76,7 @@ function PropertiesScreen() {
             <div className="featured-gallery">
               {apartments.map((apartment) => (
                 <Card
+                  key={apartment.id}
                   image={apartment.image}
                   tag={apartment.tag}
                   title={apartment.title}
@@ -93,6 +95,7 @@ function PropertiesScreen() {
             <div className="featured-gallery">
               {lands.map((land) => (
                 <Card
+                  key={land.id}
                   image={land.image}
                   tag={land.tag}
                   title={land.title}
