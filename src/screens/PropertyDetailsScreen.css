@@ -48,10 +48,8 @@
 }
 
 .property-details-title {
-  /* text-align: left; */
   padding-left: 5vw;
   margin-bottom: 0;
-  /* color: #4a4a4a; */
 }
 
 .property-details-section {
@@ -73,7 +71,6 @@
 }
 .property-details-info-title {
   font-weight: bold;
-  /* color: #4a4a4a; */
 }
 
 .property-details-tag {
@@ -90,7 +87,6 @@
 
 .property-details-address {
   font-size: 12px;
-  /* color: #4a4a4a; */
 }
 
 .property-details-price {
@@ -99,7 +95,6 @@
 }
 .property-details-price-top {
   font-size: 12px;
-  /* color: #4a4a4a; */
 }
 .property-details-price-bottom {
   font-size: 16px;
@@ -156,9 +151,6 @@
 }
 
 .property-details-text {
-  /* text-align: left; */
-
-  /* margin-left: 20px; */
   padding-left: 50px;
   text-align: left;
   font-size: 13px;
@@ -227,7 +219,6 @@
   background-color: rgba(245, 166, 35, 0.8);
   border-bottom-left-radius: 19px;
   border-bottom-right-radius: 19px;
-  /* border: 1px solid rgba(245, 166, 35, 0.5); */
 }
 .property-details-mail button {
   padding: 8px 20px;
