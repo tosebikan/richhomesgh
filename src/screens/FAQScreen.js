@@ -9,7 +9,9 @@ function FAQScreen() {
     <div className="faq-container">
       <div className="faq-hero">
         <h1 className="faq-hero-title">Frequently Asked Questions</h1>
-        <button className="faq-button feature-button">Ask a question</button>
+        <a href="mailto:customercare@richhomesgh.com">
+          <button className="faq-button feature-button">Ask a question</button>
+        </a>
       </div>
       <div className="faq-section">
         <h2>FAQ</h2>
