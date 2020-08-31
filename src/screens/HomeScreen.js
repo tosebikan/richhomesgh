@@ -176,13 +176,21 @@ function HomeScreen() {
       <div className="question">
         <h2> Have a quick question ?</h2>
         <p>send us your mail and we’ll get in touch with you </p>
-        <form className="question-form">
+        <form
+          className="question-form"
+          name="mailing-list"
+          method="POST"
+          data-netlify="true"
+        >
           <input
             type="text"
+            name="email"
             placeholder="Enter your email"
             className="question-input"
           />
-          <button className="question-button">Send</button>
+          <button className="question-button" type="submit">
+            Send
+          </button>
         </form>
       </div>
       <Footer />
