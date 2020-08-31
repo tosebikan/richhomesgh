@@ -192,7 +192,6 @@ function HomeScreen() {
             name="email"
             placeholder="Enter your email"
             className="question-input"
-            value="email"
           />
           <button className="question-button" type="submit">
             Send
