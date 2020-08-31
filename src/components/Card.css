@@ -21,8 +21,6 @@
   border-radius: 20px;
   width: 170px;
   height: 195px;
-  /* max-width: 100%;
-  max-height: 100%; */
   object-fit: cover;
   object-position: center;
   position: relative;
@@ -31,11 +29,10 @@
 
 .card-container img:hover {
   cursor: pointer;
-  transform: scale(1.026, 1.026);
+  transform: scale(1.029, 1.029);
 }
 
 .card-image-container:hover {
-  transform: scale(1.007, 1.007);
 }
 
 .card-tag {
@@ -144,6 +141,11 @@
   .card-container img {
     width: 340px;
     height: 340px;
+  }
+
+  .card-container img:hover {
+    cursor: pointer;
+    transform: scale(1.029, 1.029);
   }
 
   .card-info {
