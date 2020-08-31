@@ -293,15 +293,16 @@
   border-radius: 20px;
   margin-bottom: 20px;
   border: 1px solid #fff;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .services-item:hover {
-  border: 1px solid #d3d3d3;
+  border: 0.1px solid rgba(245, 166, 35, 0.5);
 }
 
 .services-icon {
-  background-color: #f6f6fe;
-  color: #004dff;
+  background-color: rgba(245, 166, 35, 0.25);
+  color: rgba(245, 166, 35, 1);
   padding: 15px;
   border-radius: 100%;
 }
