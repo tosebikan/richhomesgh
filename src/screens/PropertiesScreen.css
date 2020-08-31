@@ -16,7 +16,7 @@ button:focus {
   padding-top: 80px;
   margin: 0;
   margin-bottom: 50px;
-  height: 80vh;
+  /* height: 80vh; */
 }
 
 .tab-title-container {
@@ -25,6 +25,12 @@ button:focus {
   align-items: center;
   justify-content: flex-start;
   padding: 0;
+}
+
+.property-hero-title {
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
 }
 
 .tab-title {
@@ -53,11 +59,16 @@ button:focus {
 }
 
 .tab-title button:active {
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
 .tab-title button:focus {
   outline: none;
+}
+
+.tab-title button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
 }
 
 @media (min-width: 1000px) {
