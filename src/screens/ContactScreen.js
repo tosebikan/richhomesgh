@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLocationArrow,
@@ -19,6 +19,26 @@ import MyMap from "../components/MyMap";
 
 function ContactScreen() {
   const position = [5.629175, -0.076558];
+  const [status, setStatus] = useState("");
+
+  const submitForm = (ev) => {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        setStatus("SUCCESS");
+      } else {
+        setStatus("ERROR");
+      }
+    };
+    xhr.send(data);
+  };
   return (
     <div className="contact-container">
       <div style={{ paddingTop: 50 }}>
@@ -33,15 +53,20 @@ function ContactScreen() {
           </div>
           <div className="contact-form-container">
             <p className="form-title">Leave us a message</p>
-            <form className="contact-form">
+            <form
+              className="contact-form"
+              onSubmit={submitForm}
+              action="https://formspree.io/myynqvwo"
+              method="POST"
+            >
               <div className="contact-form-top-section">
                 <div className="contact-form-item">
                   <label>Name</label>
-                  <input name="name" placeholder="name" />
+                  <input type="text" name="name" placeholder="name" />
                 </div>
                 <div className="contact-form-item">
                   <label>Email</label>
-                  <input name="name" placeholder="email" />
+                  <input type="email" name="name" placeholder="email" />
                 </div>
               </div>
 
@@ -49,7 +74,13 @@ function ContactScreen() {
                 <label>Message</label>
                 <textarea name="message" placeholder="message" />
               </div>
-              <button className="feature-button">Send Message</button>
+
+              {status === "SUCCESS" ? (
+                <p>Thanks!</p>
+              ) : (
+                <button className="feature-button">Send Message</button>
+              )}
+              {status === "ERROR" && <p>Ooops! There was an error.</p>}
             </form>
           </div>
         </div>
