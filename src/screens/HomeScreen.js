@@ -39,8 +39,8 @@ function HomeScreen() {
       <div className="hero">
         <div className="hero-text">
           <h1>
-            <span id="c1">Luxury</span>
-            <span id="c2">At Its Best</span>
+            <span id="c1">Luxury &</span>
+            <span id="c2">Affordability</span>
           </h1>
           <p>Premium Real Estate At Your Finger Tips</p>
         </div>
