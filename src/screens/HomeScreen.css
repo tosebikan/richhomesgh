@@ -469,6 +469,11 @@
   margin-right: 3px;
   background-color: #f5a623;
   font-weight: bold;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.question-button:hover {
+  color: white;
 }
 
 @media (min-width: 1000px) {
