@@ -172,9 +172,6 @@ function HomeScreen() {
           </div>
         </Slider>
       </div>
-      {/*<form name="contact" netlify netlify-honeypot="bot-field" hidden>
-        <input type="email" name="email" />
-      </form>*/}
 
       <div className="question">
         <h2> Have a quick question ?</h2>
