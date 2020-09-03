@@ -47,8 +47,8 @@ function AboutUsScreen() {
             />
             <h3 style={{ color: "#fff" }}>Competitive Prices</h3>
             <p>
-              We ensure the properties listed on our platform are valued based
-              on current market prices
+              Properties on our platform are valued based on current market
+              prices
             </p>
           </div>
           <div className="services-item">
