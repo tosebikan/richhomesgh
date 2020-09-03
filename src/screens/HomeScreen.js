@@ -174,7 +174,7 @@ function HomeScreen() {
       </div>
 
       <div className="question">
-        <h2> Have a quick question ?</h2>
+        <h2> Have question's ?</h2>
         <p>send us your mail and we’ll get in touch with you </p>
         <form
           className="question-form"
@@ -195,6 +195,9 @@ function HomeScreen() {
             Send
           </button>
         </form>
+        <Link to="/contact">
+          <button className="feature-button">Send a quick message</button>
+        </Link>
       </div>
       <Footer />
     </div>
