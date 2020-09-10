@@ -53,21 +53,33 @@ ul {
 
 .header {
   position: fixed;
-  width: 90%;
+  width: 100%;
   z-index: 20;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.header__scrolled {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 15px;
+  padding-bottom: 13px;
+  backdrop-filter: blur(20px);
 }
 
 .header-links {
   display: flex;
   align-items: center;
+  padding-right: 2rem;
 }
 
 .header-links a {
   padding: 0.5rem;
+  padding-right: 1rem;
 }
 
 .header-button {
@@ -101,7 +113,15 @@ ul {
     display: none;
   }
   .header {
-    width: 95%;
+    width: 100%;
+  }
+  .header__scrolled {
+    padding-bottom: 10px;
+  }
+  .header-links {
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
   }
   .brand {
     margin-left: 20px;
@@ -120,9 +140,8 @@ ul {
   position: fixed;
   z-index: 10;
   right: 0;
-  width: 50%;
-  /* background-color: #e3715b; */
-  background-color: rgba(227, 113, 91, 0.95);
+  width: 40%;
+  background-color: rgba(227, 113, 91, 0.98);
   height: 100%;
   transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
   transform: translateX(100%);
@@ -150,7 +169,7 @@ ul {
 }
 
 .sidebar li:first-child {
-  margin-top: 10vh;
+  margin-top: 12vh;
 }
 
 .sidebar-icon {
