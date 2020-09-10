@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,11 +22,25 @@ function App() {
   const toggleMenu = () => {
     document.querySelector(".sidebar").classList.toggle("open");
   };
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+
+  const handleScroll = (e) => {
+    const scrollTop = window.pageYOffset;
+    if (scrollTop > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
   return (
     <Router>
       <ScrollToTop />
       <div className="App">
-        <header className="header">
+        <header className={scrolled ? "header header__scrolled" : "header"}>
           <Helmet>
             <title>Richhomes</title>
           </Helmet>
