@@ -163,7 +163,7 @@ function HomeScreen() {
             </p>
           </div>
           <div className="testimonial-item">
-            <img src={require("../images/person3.png")} alt="testomonial" />
+            <img src={require("../images/person2.png")} alt="testomonial" />
             <h3>Mary Queen</h3>
             <p>
               Rich Homes is definitely a service you can trust to get quality
