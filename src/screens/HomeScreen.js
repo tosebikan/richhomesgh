@@ -27,7 +27,7 @@ function HomeScreen() {
     autoplay: true,
     autoplaySpeed: 8000,
     arrows: true,
-    className: "slides"
+    className: "slide"
   };
 
   const featured = data.properties.filter(
