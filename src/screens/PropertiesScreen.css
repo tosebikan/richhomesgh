@@ -84,4 +84,7 @@ button:focus {
   .tab-title {
     margin-left: 20px;
   }
+  .categories-container {
+    margin-bottom: 70px;
+  }
 }
