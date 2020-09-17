@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBed,
   faBath,
+  faPhone,
+  faEnvelope,
   faRulerVertical
 } from "@fortawesome/free-solid-svg-icons";
 import "./PropertyDetailsScreen.css";
@@ -121,13 +123,13 @@ function PropertyDetailsScreen(props) {
             <h4> Richmond Sottie</h4>
             <div className="property-details-call">
               <button>
-                <FontAwesomeIcon icon={faBed} /> 054 123 1234
+                <FontAwesomeIcon icon={faPhone} /> 054 123 1234
               </button>
             </div>
 
             <div className="property-details-mail">
               <button>
-                <FontAwesomeIcon icon={faBed} /> Send Message{" "}
+                <FontAwesomeIcon icon={faEnvelope} /> Send Message{" "}
               </button>
             </div>
           </div>
