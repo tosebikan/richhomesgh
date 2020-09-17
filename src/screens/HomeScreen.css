@@ -359,22 +359,22 @@
   color: black !important;
 }
 
-.slides {
+.slide {
   position: relative;
 }
 
-.slides .slick-prev,
-.slides .slick-next {
+.slide .slick-prev,
+.slide .slick-next {
   position: absolute;
   top: 50%;
   z-index: 1;
 }
 
-.slides .slick-prev {
+.slide .slick-prev {
   left: 10%;
 }
 
-.slides .slick-next {
+.slide .slick-next {
   right: 10%;
 }
 
@@ -420,11 +420,11 @@
     padding-bottom: 20px;
   }
 
-  .slides .slick-prev {
+  .slide .slick-prev {
     left: 35%;
   }
 
-  .slides .slick-next {
+  .slide .slick-next {
     right: 35%;
   }
 }
