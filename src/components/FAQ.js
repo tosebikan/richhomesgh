@@ -43,7 +43,7 @@ function FAQ() {
       <AccordionItem>
         <AccordionItemHeading>
           <AccordionItemButton>
-            Should i sell my current home before buying a new one?
+            Should i sell my current home before buying another?
           </AccordionItemButton>
         </AccordionItemHeading>
         <AccordionItemPanel>
