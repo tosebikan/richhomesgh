@@ -62,17 +62,22 @@ function ContactScreen() {
               <div className="contact-form-top-section">
                 <div className="contact-form-item">
                   <label>Name</label>
-                  <input type="text" name="name" placeholder="name" />
+                  <input type="text" name="name" placeholder="name" required />
                 </div>
                 <div className="contact-form-item">
                   <label>Email</label>
-                  <input type="email" name="name" placeholder="email" />
+                  <input
+                    type="email"
+                    name="name"
+                    placeholder="email"
+                    required
+                  />
                 </div>
               </div>
 
               <div className="contact-message-item">
                 <label>Message</label>
-                <textarea name="message" placeholder="message" />
+                <textarea name="message" placeholder="message" required />
               </div>
 
               {status === "SUCCESS" ? (
