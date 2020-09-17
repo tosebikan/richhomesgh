@@ -15,42 +15,42 @@ function FAQ() {
       <AccordionItem className="accordion__item">
         <AccordionItemHeading className="accordion__heading">
           <AccordionItemButton className="accordion__button">
-            What harsh truths do you prefer to ignore?
+            what is the first step of home ownership?
           </AccordionItemButton>
         </AccordionItemHeading>
         <AccordionItemPanel className="accordion__panel">
           <p>
-            Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat
-            occaecat ut occaecat consequat est minim minim esse tempor laborum
-            consequat esse adipisicing eu reprehenderit enim.
+            Getting your finances in order and knowing how much you can afford
+            to spend on owning a home.
           </p>
         </AccordionItemPanel>
       </AccordionItem>
       <AccordionItem>
         <AccordionItemHeading>
           <AccordionItemButton>
-            What harsh truths do you prefer to ignore?
+            How long does the process take?
           </AccordionItemButton>
         </AccordionItemHeading>
         <AccordionItemPanel>
           <p>
-            Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat
-            occaecat ut occaecat consequat est minim minim esse tempor laborum
-            consequat esse adipisicing eu reprehenderit enim.
+            From searching various properties to closing escrow (finish),
+            getting a home can take up to three months but having an exact
+            budget can narrow the search down to the types of properties you can
+            afford
           </p>
         </AccordionItemPanel>
       </AccordionItem>
       <AccordionItem>
         <AccordionItemHeading>
           <AccordionItemButton>
-            What harsh truths do you prefer to ignore?
+            Should i sell my current home before buying a new one?
           </AccordionItemButton>
         </AccordionItemHeading>
         <AccordionItemPanel>
           <p>
-            Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat
-            occaecat ut occaecat consequat est minim minim esse tempor laborum
-            consequat esse adipisicing eu reprehenderit enim.
+            It depends entirely on you, if selling your current home would
+            enable you afford a more valuable one, naturally youll sell the
+            former but if that isnt the case then it isnt a necessity.
           </p>
         </AccordionItemPanel>
       </AccordionItem>
