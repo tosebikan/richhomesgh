@@ -47,6 +47,7 @@
   left: 0;
   right: 0;
   color: white;
+  animation-fill-mode: forwards;
   animation: bounce;
   animation-duration: 2s;
   animation-iteration-count: infinite;
