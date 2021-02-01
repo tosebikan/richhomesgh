@@ -22,7 +22,7 @@ function AboutUsScreen() {
           in premium real estate in Ghana without the overhead excessive costs.
         </p>
         <p>
-          We are passionate about real estate and ensure the bestin quality
+          We are passionate about real estate and ensure the best in quality
           services are rendered in all our processes.
         </p>
       </div>
